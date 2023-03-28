@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+MSI/__pycache__/
+wandb/
+temp.ipynb
+temp_train_gnn.py
+temp_split_dataset_gcn.ipynb
+ckpt/
+data/processed/
+data/twosides.csv
+database/
