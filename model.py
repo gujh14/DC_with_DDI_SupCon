@@ -5,7 +5,7 @@ import numpy as np
 
 from torch_geometric.nn import GCNConv, SAGEConv, GATConv, GINConv
 
-class CombNetContrastive(nn.Module):
+class CombNetRW(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, comb_type='prod_fc', dropout=0.1):
         super().__init__()
         self.input_dim = input_dim

@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score, roc_auc_score, average_precision_score
 
-from model import CombNetContrastive
+from model import CombNetRW
 from dataset import CombinationDatasetRW
 import argparse
 import wandb
@@ -157,7 +157,7 @@ def evaluate(model, device, loader, criterion, metric_list=[accuracy_score], che
 def main():
     args = parse_args()
     group = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})"
-    wandb.init(project="DC_DDI_contrastive_rw", group=group, entity="gujh14")
+    wandb.init(project="DC_DDI_contrastive_rw_final", group=group, entity="gujh14")
     wandb.config.update(args)
     wandb.run.name = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}"
     wandb.run.save()
@@ -182,7 +182,7 @@ def main():
 
     if args.train_mode == 'contra':
         print("Pre-train with contrastive loss")
-        contra_model = CombNetContrastive(input_dim, hidden_dim, output_dim, args.comb_type).to(device)
+        contra_model = CombNetRW(input_dim, hidden_dim, output_dim, args.comb_type).to(device)
         contra_optimizer = torch.optim.Adam(contra_model.parameters(), lr=args.contra_lr, weight_decay=args.weight_decay)
         contra_early_stopping = EarlyStopping(patience=20, verbose=True, path=f"{ckpt_name}_contra.pt")
 
@@ -200,7 +200,7 @@ def main():
         torch.cuda.empty_cache()
 
     print("Train with cross entropy loss")
-    model = CombNetContrastive(input_dim, hidden_dim, output_dim, args.comb_type).to(device)
+    model = CombNetRW(input_dim, hidden_dim, output_dim, args.comb_type).to(device)
     print("Model architecture: ")
     print(model)
 
