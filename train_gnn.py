@@ -98,6 +98,7 @@ def parse_args():
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--epochs', type=int, default=100)
     parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--neg_ratio', type=int, default=1, choices=[1, 2, 3])
     parser.add_argument('--device', type=int, default=0)
     parser.add_argument('--train_mode', type=str, default='contra', choices=['contra', 'nocontra'])
     parser.add_argument('--wandb', action=argparse.BooleanOptionalAction)
@@ -189,10 +190,10 @@ def create_pyg_graph(graph_name):
 def main():
     args = parse_args()
     if args.wandb:
-        group = f'{args.train_mode}_{args.conv}_neg({args.neg_dataset})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})'
-        wandb.init(project='DC_DDI_contrastive_gnn_final', group=group, entity='gujh14')
+        group = f'{args.train_mode}_{args.conv}{args.nlayers}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})'
+        wandb.init(project='DC_DDI_contrastive_gnn_negratio', group=group, entity='gujh14')
         wandb.config.update(args)
-        wandb.run.name = f'{args.train_mode}_{args.conv}_neg({args.neg_dataset})_comb({args.comb_type})_seed{args.seed}'
+        wandb.run.name = f'{args.train_mode}_{args.conv}{args.nlayers}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}'
         wandb.run.save()
     print(args)
 
@@ -212,7 +213,7 @@ def main():
     examples = {}
     y = {}
     modes = ['train', 'valid', 'test']
-    with open(f'data/splits_gcn/DC_{args.neg_dataset}_split{args.seed}.pkl', 'rb') as f:
+    with open(f'data/splits_gcn/DC_neg({args.neg_dataset}_{args.neg_ratio})_split{args.seed}.pkl', 'rb') as f:
         split_dict = pickle.load(f)
         pairs = split_dict['pairs']
         labels = split_dict['labels']
@@ -231,7 +232,7 @@ def main():
 
     # prepare model
     device = torch.device(f"cuda:{args.device}" if torch.cuda.is_available() else "cpu")
-    ckpt_name = f'ckpt/{args.conv}_{args.comb_type}_{args.seed}'
+    ckpt_name = f'ckpt/{args.conv}{args.nlayers}_{args.comb_type}_{args.seed}'
 
     # contrastive pretraining
     if args.train_mode == 'contra':
@@ -264,7 +265,7 @@ def main():
     if args.train_mode == 'contra':
         model.load_state_dict(torch.load(f'{ckpt_name}_contra.pt'))
     
-    early_stopping = EarlyStopping(patience=10, verbose=True, path=f'{ckpt_name}.pt')
+    early_stopping = EarlyStopping(patience=20, verbose=True, path=f'{ckpt_name}.pt')
     metric_list = [accuracy_score, roc_auc_score, f1_score, average_precision_score, precision_score, recall_score]
 
     for epoch in range(args.epochs):
@@ -296,7 +297,7 @@ def main():
             print('Early stopping')
             break
     
-    test_loss, test_scores = evaluate(model, device, pyg_graph, edge_label_index['test'], edge_label['test'], criterion, metric_list)
+    test_loss, test_scores = evaluate(model, device, pyg_graph, edge_label_index['test'], edge_label['test'], criterion, metric_list, checkpoint=f'{ckpt_name}.pt')
     if args.wandb:
         wandb.log({
             'test_loss': test_loss,
