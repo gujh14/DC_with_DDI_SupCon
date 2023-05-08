@@ -82,7 +82,7 @@ class EarlyStopping:
         torch.save(model.state_dict(), self.path)
         self.val_loss_min = val_loss
     
-def train_contrastive(model, device, train_loader, optimizer, args):
+def train_contrastive(model, device, train_loader, optimizer):
     '''
     Contrastive training with info nce loss
     '''
@@ -157,7 +157,7 @@ def evaluate(model, device, loader, criterion, metric_list=[accuracy_score], che
 def main():
     args = parse_args()
     group = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})"
-    wandb.init(project="DC_DDI_contrastive_rw_final", group=group, entity="gujh14")
+    wandb.init(project="DC_DDI_contrastive_rw_negratio", group=group, entity="gujh14")
     wandb.config.update(args)
     wandb.run.name = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}"
     wandb.run.save()
@@ -187,7 +187,7 @@ def main():
         contra_early_stopping = EarlyStopping(patience=20, verbose=True, path=f"{ckpt_name}_contra.pt")
 
         for epoch in range(args.epochs):
-            train_loss = train_contrastive(contra_model, device, train_loader, contra_optimizer, args)
+            train_loss = train_contrastive(contra_model, device, train_loader, contra_optimizer)
             print(f'Contra Epoch {epoch+1:03d}: | Train Loss: {train_loss:.4f}')
             contra_early_stopping(train_loss, contra_model)
             if contra_early_stopping.early_stop:
@@ -209,7 +209,7 @@ def main():
         model.load_state_dict(torch.load(f"{ckpt_name}_contra.pt"))
     
     criterion = nn.BCEWithLogitsLoss()
-    early_stopping = EarlyStopping(patience=10, verbose=True, path=f"{ckpt_name}.pt")
+    early_stopping = EarlyStopping(patience=20, verbose=True, path=f"{ckpt_name}.pt")
     metric_list = [accuracy_score, roc_auc_score, f1_score, average_precision_score, precision_score, recall_score]
 
     for epoch in range(args.epochs):
