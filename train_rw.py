@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument('--database', type=str, default='DC_combined', choices=['C_DCDB', 'DCDB', 'DC_combined'])
     parser.add_argument('--embeddingf', type=str, default='DREAMwalk', choices=['node2vec', 'edge2vec', 'res2vec_homo', 'res2vec_hetero', 'DREAMwalk'])
     parser.add_argument('--neg_dataset', type=str, default='TWOSIDES', choices=['random', 'TWOSIDES'])
-    parser.add_argument('--neg_ratio', type=int, default=1, help='negative ratio')
+    parser.add_argument('--neg_ratio', type=int, default=1, choices=[1, 2, 3],help='negative ratio')
     parser.add_argument('--comb_type', type=str, default='prod_fc', choices=['sum', 'cosine', 'prod_fc'])
     parser.add_argument('--batch_size', type=int, default=128, help='batch size')
     parser.add_argument('--seed', type=int, default=42, help='random seed')
