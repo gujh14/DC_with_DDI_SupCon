@@ -23,9 +23,9 @@ To preprocess and split data, run ```preprocess.ipynb``` and ```data_split_gcn.i
 ## Training
 To train new model, run bash scripts (```script_rw.sh``` and ```script_gnn.sh```).
 
-You can adjust the arguments as you wish.
+You need to adjust the arguments as you wish.
 
-(If using wandb), Use your own entity name and project name for arguments.
+(If using wandb), use your own wandb entity & project name for arguments.
 
 ## Embedding space visualization
 To visualize the embedding vectors of drug pairs, run ```visualization_embedding_space.ipynb```.
