@@ -14,7 +14,7 @@ class CombinationDatasetRW(Dataset):
     '''
     Drug combination dataset for random walk algorithms
     '''
-    def __init__(self, database='C_DCDB', embeddingf='node2vec', neg_ratio=1, neg_dataset='random', seed=42, transform=None):
+    def __init__(self, database='C_DCDB', embeddingf='node2vec', neg_ratio=1, neg_dataset='random', seed=42, transform=None, exclude_list=[]):
         '''
         args
             - database: str, default='C_DCDB' ['C_DCDB', 'DCDB', 'DC_combined']
@@ -22,6 +22,7 @@ class CombinationDatasetRW(Dataset):
             - neg_ratio: int, default=1
             - neg_dataset: str, default='random' ['random', 'TWOSIDES']
             - seed: int, default=42
+            - exclude_list: list, default=[] (list of DB ID sets to exclude from the training set)
         '''
         if database not in ['C_DCDB', 'DCDB', 'DC_combined']:
             raise ValueError('database must be one of [C_DCDB, DCDB, DC_combined]')
@@ -36,8 +37,12 @@ class CombinationDatasetRW(Dataset):
         self.transform = transform
         self.neg_dataset = neg_dataset
         self.seed = seed
+        self.exclude_list = exclude_list
 
-        self.data_path = Path('data/processed')/f'{database}_embf({embeddingf})_neg({neg_dataset}_{neg_ratio})_seed{seed}.pt'
+        if len(exclude_list) == 0:
+            self.data_path = Path('data/processed')/f'{database}_embf({embeddingf})_neg({neg_dataset}_{neg_ratio})_seed{seed}.pt'
+        else:
+            self.data_path = Path('data/processed')/f'casestudy_{database}_embf({embeddingf})_neg({neg_dataset}_{neg_ratio})_seed{seed}.pt'
 
         if self.data_path.exists():
             print(f'{self.data_path} already exists in processed/ directory.')
@@ -81,6 +86,8 @@ class CombinationDatasetRW(Dataset):
         for i in range(len(pos_df)):
             drug1_id = pos_df.iloc[i, 0]
             drug2_id = pos_df.iloc[i, 1]
+            if set([drug1_id, drug2_id]) in self.exclude_list:
+                continue
             comb_embedding = np.concatenate([embedding_dict[drug1_id], embedding_dict[drug2_id]])
             dataset_list.append([torch.tensor(comb_embedding, dtype=torch.float), torch.tensor(1, dtype=torch.long)])
         
@@ -90,6 +97,8 @@ class CombinationDatasetRW(Dataset):
             while count < len(pos_df) * self.neg_ratio:
                 drug1_id = random.choice(list(drug_id2name.keys()))
                 drug2_id = random.choice(list(drug_id2name.keys()))
+                if set([drug1_id, drug2_id]) in self.exclude_list:
+                    continue
                 if drug1_id == drug2_id:
                     continue
                 if ((pos_df['drug_1'] == drug1_id) & (pos_df['drug_2'] == drug2_id)).any():
@@ -108,6 +117,8 @@ class CombinationDatasetRW(Dataset):
             for i in range(len(neg_df)):
                 drug1_id = neg_df.iloc[i, 0]
                 drug2_id = neg_df.iloc[i, 1]
+                if set([drug1_id, drug2_id]) in self.exclude_list:
+                    continue
                 comb_embedding = np.concatenate([embedding_dict[drug1_id], embedding_dict[drug2_id]])
                 dataset_list.append([torch.tensor(comb_embedding, dtype=torch.float), torch.tensor(0, dtype=torch.long)])
         
