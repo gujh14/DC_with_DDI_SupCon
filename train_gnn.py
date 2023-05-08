@@ -101,7 +101,9 @@ def parse_args():
     parser.add_argument('--neg_ratio', type=int, default=1, choices=[1, 2, 3])
     parser.add_argument('--device', type=int, default=0)
     parser.add_argument('--train_mode', type=str, default='contra', choices=['contra', 'nocontra'])
-    parser.add_argument('--wandb', action=argparse.BooleanOptionalAction)
+    parser.add_argument('--wandb', action=argparse.BooleanOptionalAction, default=False, help='use wandb or not')
+    parser.add_argument('--entity', type=str, help='your wandb entity name')
+    parser.add_argument('--project', type=str, help='your wandb project name')
 
     args = parser.parse_args()
     return args
@@ -191,7 +193,7 @@ def main():
     args = parse_args()
     if args.wandb:
         group = f'{args.train_mode}_{args.conv}{args.nlayers}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})'
-        wandb.init(project='DC_DDI_contrastive_gnn_negratio', group=group, entity='gujh14')
+        wandb.init(project=args.project, group=group, entity=args.entity)
         wandb.config.update(args)
         wandb.run.name = f'{args.train_mode}_{args.conv}{args.nlayers}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}'
         wandb.run.save()

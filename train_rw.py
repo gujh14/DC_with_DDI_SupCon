@@ -29,6 +29,9 @@ def parse_args():
     parser.add_argument('--device', type=int, default=0, help='device number')
     # parser.add_argument('--ckpt_name', type=str, default='default_DREAMwalk_prod_fc', help='checkpoint name')
     parser.add_argument('--train_mode', type=str, default='contra', choices=['contra', 'nocontra'])
+    parser.add_argument('--wandb', action=argparse.BooleanOptionalAction, default=False, help='use wandb or not')
+    parser.add_argument('--entity', type=str, help='your wandb entity name')
+    parser.add_argument('--project', type=str, help='your wandb project name')
     args = parser.parse_args()
     return args
 
@@ -156,11 +159,12 @@ def evaluate(model, device, loader, criterion, metric_list=[accuracy_score], che
 
 def main():
     args = parse_args()
-    group = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})"
-    wandb.init(project="DC_DDI_contrastive_rw_negratio", group=group, entity="gujh14")
-    wandb.config.update(args)
-    wandb.run.name = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}"
-    wandb.run.save()
+    if args.wandb:
+        group = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})"
+        wandb.init(project=args.project, group=group, entity=args.entity)
+        wandb.config.update(args)
+        wandb.run.name = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}"
+        wandb.run.save()
     print(args)
 
     seed_everything(args.seed)
@@ -217,22 +221,23 @@ def main():
         train_loss, train_scores = train_ce(model, device, train_loader, criterion, optimizer, metric_list)
         valid_loss, valid_scores = evaluate(model, device, valid_loader, criterion, metric_list)
 
-        wandb.log({
-            "train_loss": train_loss,
-            "valid_loss": valid_loss,
-            "train_acc": train_scores[0],
-            "valid_acc": valid_scores[0],
-            "train_auc": train_scores[1],
-            "valid_auc": valid_scores[1],
-            "train_f1": train_scores[2],
-            "valid_f1": valid_scores[2],
-            "train_ap": train_scores[3],
-            "valid_ap": valid_scores[3],
-            "train_precision": train_scores[4],
-            "valid_precision": valid_scores[4],
-            "train_recall": train_scores[5],
-            "valid_recall": valid_scores[5],
-        })
+        if args.wandb:
+            wandb.log({
+                "train_loss": train_loss,
+                "valid_loss": valid_loss,
+                "train_acc": train_scores[0],
+                "valid_acc": valid_scores[0],
+                "train_auc": train_scores[1],
+                "valid_auc": valid_scores[1],
+                "train_f1": train_scores[2],
+                "valid_f1": valid_scores[2],
+                "train_ap": train_scores[3],
+                "valid_ap": valid_scores[3],
+                "train_precision": train_scores[4],
+                "valid_precision": valid_scores[4],
+                "train_recall": train_scores[5],
+                "valid_recall": valid_scores[5],
+            })
 
         print(f'Epoch {epoch+1:03d}: | Train Loss: {train_loss:.4f} | Train Acc: {train_scores[0]*100:.2f}% | Train Precision: {train_scores[4]:.4f} | Train Recall: {train_scores[5]:.4f} || Valid Loss: {valid_loss:.4f} | Valid Acc: {valid_scores[0]*100:.2f}% | Valid Precision: {valid_scores[4]:.4f} | Valid Recall: {valid_scores[5]:.4f}')
 
@@ -242,15 +247,16 @@ def main():
             break
 
     test_loss, test_scores = evaluate(model, device, test_loader, criterion, metric_list, checkpoint=f"{ckpt_name}.pt")
-    wandb.log({
-        "test_loss": test_loss,
-        "test_acc": test_scores[0],
-        "test_auc": test_scores[1],
-        "test_f1": test_scores[2],
-        "test_ap": test_scores[3],
-        "test_precision": test_scores[4],
-        "test_recall": test_scores[5],
-    })
+    if args.wandb:
+        wandb.log({
+            "test_loss": test_loss,
+            "test_acc": test_scores[0],
+            "test_auc": test_scores[1],
+            "test_f1": test_scores[2],
+            "test_ap": test_scores[3],
+            "test_precision": test_scores[4],
+            "test_recall": test_scores[5],
+        })
 
     print(f'Test Loss: {test_loss:.4f} | Test Acc: {test_scores[0]*100:.2f}% | Test Precision: {test_scores[4]:.4f} | Test Recall: {test_scores[5]:.4f}')
 
