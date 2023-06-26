@@ -21,7 +21,7 @@ class CombinationDatasetRW(Dataset):
         '''
         args
             - database: str, default='DC_combined' ['DC_combined', 'DC_combined_small']
-            - kgfeat: str, default=None [None, 'node2vec', 'edge2vec', 'res2vec_homo', 'res2vec_hetero', 'DREAMwalk', 'NEWMIN']
+            - kgfeat: str, default=None [None, 'node2vec', 'edge2vec', 'res2vec_homo', 'res2vec_hetero', 'DREAMwalk']
             - chemfeat: str, default=None [None, 'ecfp', 'maccs', 'mordred']
             - neg_ratio: int, default=1
             - neg_dataset: str, default='random' ['random', 'TWOSIDES']
