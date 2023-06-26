@@ -45,7 +45,10 @@ class CombinationDatasetRW(Dataset):
         self.neg_dataset = neg_dataset
         self.seed = seed
         self.exclude_list = exclude_list
-
+        
+        if not os.path.exists('data/processed'):
+            os.makedirs('data/processed')
+            
         if len(exclude_list) == 0:
             self.data_path = Path('data/processed')/f'{database}_kgfeat({kgfeat})_chemfeat({chemfeat})_neg({neg_dataset}_{neg_ratio})_seed{seed}.pt'
         else:

@@ -183,6 +183,8 @@ def main():
     output_dim = 1
 
     device = torch.device(f"cuda:{args.device}" if torch.cuda.is_available() else "cpu")
+    if not os.path.exists("ckpt"):
+        os.makedirs("ckpt")
     ckpt_name = f'ckpt/{args.kgfeat}_{args.chemfeat}_{args.comb_type}_{args.seed}'
 
     if args.train_mode == 'contra':
