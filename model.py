@@ -9,8 +9,8 @@ class CombNetRW(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, comb_type='prod_fc', dropout=0.1):
         super().__init__()
         self.input_dim = input_dim
-        if comb_type not in ['sum', 'cosine', 'prod_fc']:
-            raise ValueError('comb_type must be one of [sum, cosine, prod_fc]')
+        if comb_type not in ['sum', 'cosine', 'prod_fc', 'concat']:
+            raise ValueError('comb_type must be one of [sum, cosine, prod_fc, concat]')
         self.comb_type = comb_type
         self.tr = nn.Sequential(
             nn.Linear(input_dim, hidden_dim),
@@ -21,9 +21,9 @@ class CombNetRW(nn.Module):
             nn.BatchNorm1d(hidden_dim),
         )
         self.cosine_similarity = nn.CosineSimilarity(dim=1, eps=1e-8)
-
+        fc_dim = hidden_dim * 2 if comb_type == 'concat' else hidden_dim
         self.fc = nn.Sequential(
-            nn.Linear(hidden_dim, hidden_dim),
+            nn.Linear(fc_dim, hidden_dim),
             nn.BatchNorm1d(hidden_dim),
             nn.ReLU(),
             nn.Dropout(dropout),
@@ -48,6 +48,13 @@ class CombNetRW(nn.Module):
         elif self.comb_type == 'prod_fc':
             comb = drug1 * drug2
             return self.fc(comb)
+        elif self.comb_type == 'concat':
+            # order invariant concat
+            comb1 = torch.cat((drug1, drug2), dim=1)
+            comb2 = torch.cat((drug2, drug1), dim=1)
+            pred1 = self.fc(comb1)
+            pred2 = self.fc(comb2)
+            return (pred1 + pred2) / 2
         
     def info_nce_loss(self, cos_sim, labels):
         # labels: (batch_size, 1) with values 0 or 1
@@ -63,7 +70,7 @@ class CombNetRW(nn.Module):
         loss = -torch.log(pos_loss / (pos_loss + neg_loss))
         return loss
     
-    def extract_trained_feature(self, data, normalize):
+    def extract_trained_feature(self, data, normalize=False):
         drug1, drug2 = data[:, :self.input_dim], data[:, self.input_dim:]
         drug1, drug2 = self.tr(drug1), self.tr(drug2)
         if normalize:
@@ -161,7 +168,7 @@ class CombGNN(torch.nn.Module):
         loss = -torch.log(pos_loss / (pos_loss + neg_loss))
         return loss
     
-    def extract_trained_feature(self, x, edge_index, edge_label_index, normalize):
+    def extract_trained_feature(self, x, edge_index, edge_label_index, normalize=False):
         x = self.embedding(x)
 
         for conv in self.convs[:-1]:
