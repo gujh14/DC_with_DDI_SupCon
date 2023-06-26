@@ -15,11 +15,12 @@ import wandb
 
 def parse_args():
     parser = argparse.ArgumentParser(description='CombNet_RW')
-    parser.add_argument('--database', type=str, default='DC_combined', choices=['C_DCDB', 'DCDB', 'DC_combined'])
-    parser.add_argument('--embeddingf', type=str, default='DREAMwalk', choices=['node2vec', 'edge2vec', 'res2vec_homo', 'res2vec_hetero', 'DREAMwalk'])
+    parser.add_argument('--database', type=str, default='DC_combined', choices=['DC_combined', 'DC_combined_small'])
+    parser.add_argument('--kgfeat', type=str, default=None, choices=[None, 'node2vec', 'edge2vec', 'res2vec_homo', 'res2vec_hetero', 'DREAMwalk'])
+    parser.add_argument('--chemfeat', type=str, default=None, choices=[None, 'ecfp', 'maccs', 'mordred'])
     parser.add_argument('--neg_dataset', type=str, default='TWOSIDES', choices=['random', 'TWOSIDES'])
     parser.add_argument('--neg_ratio', type=int, default=1, choices=[1, 2, 3],help='negative ratio')
-    parser.add_argument('--comb_type', type=str, default='prod_fc', choices=['sum', 'cosine', 'prod_fc'])
+    parser.add_argument('--comb_type', type=str, default='prod_fc', choices=['sum', 'cosine', 'prod_fc', 'concat'])
     parser.add_argument('--batch_size', type=int, default=128, help='batch size')
     parser.add_argument('--seed', type=int, default=42, help='random seed')
     parser.add_argument('--epochs', type=int, default=100, help='number of epochs')
@@ -30,8 +31,8 @@ def parse_args():
     # parser.add_argument('--ckpt_name', type=str, default='default_DREAMwalk_prod_fc', help='checkpoint name')
     parser.add_argument('--train_mode', type=str, default='contra', choices=['contra', 'nocontra'])
     parser.add_argument('--wandb', action=argparse.BooleanOptionalAction, default=False, help='use wandb or not')
-    parser.add_argument('--entity', type=str, help='your wandb entity name')
-    parser.add_argument('--project', type=str, help='your wandb project name')
+    parser.add_argument('--entity', type=str, default='gujh14', help='your wandb entity name')
+    parser.add_argument('--project', type=str, default='DC_DDI_SCL - chemical features 10 seeds', help='your wandb project name')
     args = parser.parse_args()
     return args
 
@@ -160,16 +161,16 @@ def evaluate(model, device, loader, criterion, metric_list=[accuracy_score], che
 def main():
     args = parse_args()
     if args.wandb:
-        group = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})"
+        group = f"{args.train_mode}_kg({args.kgfeat})_chem({args.chemfeat})_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_celr({args.ce_lr})_contralr({args.contra_lr})"
         wandb.init(project=args.project, group=group, entity=args.entity)
         wandb.config.update(args)
-        wandb.run.name = f"{args.train_mode}_{args.embeddingf}_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}"
+        wandb.run.name = f"{args.train_mode}_kg({args.kgfeat})_chem({args.chemfeat})_neg({args.neg_dataset}_{args.neg_ratio})_comb({args.comb_type})_seed{args.seed}"
         wandb.run.save()
     print(args)
 
     seed_everything(args.seed)
 
-    dataset = CombinationDatasetRW(args.database, args.embeddingf, args.neg_ratio, args.neg_dataset, args.seed)
+    dataset = CombinationDatasetRW(args.database, args.kgfeat, args.chemfeat, args.neg_ratio, args.neg_dataset, args.seed)
     train_dataset, valid_dataset, test_dataset = dataset['train'], dataset['valid'], dataset['test']
     print(f'Number of train, valid, test: {len(train_dataset)}, {len(valid_dataset)}, {len(test_dataset)}')
 
@@ -177,12 +178,12 @@ def main():
     valid_loader = DataLoader(valid_dataset, batch_size=args.batch_size, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False)
 
-    input_dim = train_dataset[0][0].shape[0] // 2 # 128
-    hidden_dim = input_dim
+    input_dim = train_dataset[0][0].shape[0] // 2
+    hidden_dim = 128
     output_dim = 1
 
     device = torch.device(f"cuda:{args.device}" if torch.cuda.is_available() else "cpu")
-    ckpt_name = f'ckpt/{args.embeddingf}_{args.comb_type}_{args.seed}'
+    ckpt_name = f'ckpt/{args.kgfeat}_{args.chemfeat}_{args.comb_type}_{args.seed}'
 
     if args.train_mode == 'contra':
         print("Pre-train with contrastive loss")
