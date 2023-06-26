@@ -77,6 +77,16 @@ class CombNetRW(nn.Module):
             drug1 = F.normalize(drug1, dim=1)
             drug2 = F.normalize(drug2, dim=1)
         return drug1 * drug2
+
+    def project_single_entity(self, data, normalize=False):
+        ent = data
+        ent = self.tr(ent)
+        if normalize:
+            ent = F.normalize(ent, dim=1)
+        return ent
+    
+    def project_pair_entity(self, data, normalize=False):
+        return self.extract_trained_feature(data, normalize=normalize)
     
 class CombGNN(torch.nn.Module):
     def __init__(self, convlayer, nlayers, num_nodes, hidden_dim, output_dim, comb_type='prod_fc', dropout=0.1):
