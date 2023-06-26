@@ -1,0 +1,48 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+lansoprazole	DB00448	drug	MAPT	4137	protein
+lansoprazole	DB00448	drug	ATP4A	495	protein
+lansoprazole	DB00448	drug	ATP4B	496	protein
+mercaptopurine	DB01033	drug	HPRT1	3251	protein
+mercaptopurine	DB01033	drug	IMPDH2	3615	protein
+mercaptopurine	DB01033	drug	IMPDH1	3614	protein
+mercaptopurine	DB01033	drug	PPAT	5471	protein
+HPRT1	3251	protein	PPAT	5471	protein
+IMPDH2	3615	protein	IMPDH1	3614	protein
+IMPDH2	3615	protein	PPAT	5471	protein
+ATP4A	495	protein	ATP4B	496	protein
+MAPT	4137	protein	microtubule cytoskeleton organization	GO:0000226	biological_function
+HPRT1	3251	protein	purine nucleotide biosynthetic process	GO:0006164	biological_function
+HPRT1	3251	protein	purine ribonucleoside salvage	GO:0006166	biological_function
+HPRT1	3251	protein	guanine salvage	GO:0006178	biological_function
+HPRT1	3251	protein	IMP metabolic process	GO:0046040	biological_function
+MAPT	4137	protein	regulation of response to DNA damage stimulus	GO:2001020	biological_function
+MAPT	4137	protein	negative regulation of gene expression	GO:0010629	biological_function
+MAPT	4137	protein	negative regulation of kinase activity	GO:0033673	biological_function
+MAPT	4137	protein	supramolecular fiber organization	GO:0097435	biological_function
+MAPT	4137	protein	synapse organization	GO:0050808	biological_function
+MAPT	4137	protein	memory	GO:0007613	biological_function
+IMPDH2	3615	protein	circadian rhythm	GO:0007623	biological_function
+MAPT	4137	protein	regulation of autophagy	GO:0010506	biological_function
+MAPT	4137	protein	negative regulation of mitochondrial membrane potential	GO:0010917	biological_function
+MAPT	4137	protein	regulation of microtubule polymerization or depolymerization	GO:0031110	biological_function
+MAPT	4137	protein	regulation of microtubule cytoskeleton organization	GO:0070507	biological_function
+MAPT	4137	protein	positive regulation of microtubule polymerization	GO:0031116	biological_function
+MAPT	4137	protein	regulation of calcium-mediated signaling	GO:0050848	biological_function
+MAPT	4137	protein	positive regulation of superoxide anion generation	GO:0032930	biological_function
+HPRT1	3251	protein	hypoxanthine salvage	GO:0043103	biological_function
+MAPT	4137	protein	positive regulation of neuron death	GO:1901216	biological_function
+MAPT	4137	protein	positive regulation of axon extension	GO:0045773	biological_function
+HPRT1	3251	protein	positive regulation of dopamine metabolic process	GO:0045964	biological_function
+HPRT1	3251	protein	GMP catabolic process	GO:0046038	biological_function
+HPRT1	3251	protein	hypoxanthine metabolic process	GO:0046100	biological_function
+MAPT	4137	protein	intracellular distribution of mitochondria	GO:0048312	biological_function
+HPRT1	3251	protein	protein homotetramerization	GO:0051289	biological_function
+MAPT	4137	protein	negative regulation of mitochondrial fission	GO:0090258	biological_function
+MAPT	4137	protein	positive regulation of cellular protein localization	GO:1903829	biological_function
+MAPT	4137	protein	regulation of cellular response to heat	GO:1900034	biological_function
+MAPT	4137	protein	positive regulation of protein localization to synapse	GO:1902474	biological_function
+MAPT	4137	protein	negative regulation of establishment of protein localization to mitochondrion	GO:1903748	biological_function
+MAPT	4137	protein	amyloid fibril formation	GO:1990000	biological_function
+regulation of microtubule polymerization or depolymerization	GO:0031110	biological_function	regulation of microtubule cytoskeleton organization	GO:0070507	biological_function
+regulation of microtubule cytoskeleton organization	GO:0070507	biological_function	microtubule cytoskeleton organization	GO:0000226	biological_function
+amyloid fibril formation	GO:1990000	biological_function	supramolecular fiber organization	GO:0097435	biological_function

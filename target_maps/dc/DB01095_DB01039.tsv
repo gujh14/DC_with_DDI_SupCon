@@ -1,0 +1,74 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+fluvastatin	DB01095	drug	HMGCR	3156	protein
+fenofibrate	DB01039	drug	PPARA	5465	protein
+fenofibrate	DB01039	drug	PPARG	5468	protein
+fenofibrate	DB01039	drug	PPARD	5467	protein
+fenofibrate	DB01039	drug	NR1I2	8856	protein
+fenofibrate	DB01039	drug	MMP25	64386	protein
+PPARA	5465	protein	negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function
+PPARG	5468	protein	negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function
+NR1I2	8856	protein	negative regulation of transcription, DNA-templated	GO:0045892	biological_function
+PPARG	5468	protein	cell maturation	GO:0048469	biological_function
+PPARG	5468	protein	glucose homeostasis	GO:0042593	biological_function
+PPARD	5467	protein	apoptotic signaling pathway	GO:0097190	biological_function
+PPARA	5465	protein	negative regulation of inflammatory response	GO:0050728	biological_function
+PPARG	5468	protein	signal transduction	GO:0007165	biological_function
+PPARG	5468	protein	regulation of blood pressure	GO:0008217	biological_function
+HMGCR	3156	protein	cholesterol biosynthetic process	GO:0006695	biological_function
+NR1I2	8856	protein	xenobiotic metabolic process	GO:0006805	biological_function
+PPARD	5467	protein	apoptotic process	GO:0006915	biological_function
+PPARG	5468	protein	activation of cysteine-type endopeptidase activity involved in apoptotic process	GO:0006919	biological_function
+PPARA	5465	protein	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+PPARD	5467	protein	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+PPARG	5468	protein	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+NR1I2	8856	protein	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+PPARA	5465	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+PPARG	5468	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+NR1I2	8856	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+PPARG	5468	protein	cellular response to insulin stimulus	GO:0032869	biological_function
+PPARG	5468	protein	macrophage derived foam cell differentiation	GO:0010742	biological_function
+PPARA	5465	protein	negative regulation of macrophage derived foam cell differentiation	GO:0010745	biological_function
+PPARG	5468	protein	negative regulation of macrophage derived foam cell differentiation	GO:0010745	biological_function
+PPARA	5465	protein	negative regulation of receptor biosynthetic process	GO:0010871	biological_function
+PPARG	5468	protein	negative regulation of receptor biosynthetic process	GO:0010871	biological_function
+PPARA	5465	protein	negative regulation of cholesterol storage	GO:0010887	biological_function
+PPARG	5468	protein	negative regulation of cholesterol storage	GO:0010887	biological_function
+PPARA	5465	protein	negative regulation of sequestering of triglyceride	GO:0010891	biological_function
+PPARG	5468	protein	negative regulation of sequestering of triglyceride	GO:0010891	biological_function
+PPARG	5468	protein	negative regulation of angiogenesis	GO:0016525	biological_function
+PPARG	5468	protein	monocyte differentiation	GO:0030224	biological_function
+PPARG	5468	protein	response to retinoic acid	GO:0032526	biological_function
+PPARG	5468	protein	positive regulation of DNA binding transcription factor activity	GO:0051091	biological_function
+PPARG	5468	protein	peroxisome proliferator activated receptor signaling pathway	GO:0035357	biological_function
+NR1I2	8856	protein	exogenous drug catabolic process	GO:0042738	biological_function
+NR1I2	8856	protein	xenobiotic transport	GO:0042908	biological_function
+PPARG	5468	protein	lipoprotein transport	GO:0042953	biological_function
+PPARG	5468	protein	positive regulation of DNA binding	GO:0043388	biological_function
+PPARG	5468	protein	negative regulation of blood vessel endothelial cell migration	GO:0043537	biological_function
+PPARG	5468	protein	low-density lipoprotein particle receptor biosynthetic process	GO:0045713	biological_function
+NR1I2	8856	protein	drug export	GO:0046618	biological_function
+PPARG	5468	protein	negative regulation of smooth muscle cell proliferation	GO:0048662	biological_function
+PPARA	5465	protein	negative regulation of leukocyte cell-cell adhesion	GO:1903038	biological_function
+HMGCR	3156	protein	protein tetramerization	GO:0051262	biological_function
+PPARG	5468	protein	cellular response to low-density lipoprotein particle stimulus	GO:0071404	biological_function
+PPARG	5468	protein	negative regulation of interferon-gamma-mediated signaling pathway	GO:0060336	biological_function
+PPARG	5468	protein	negative regulation of gene silencing by miRNA	GO:0060965	biological_function
+PPARG	5468	protein	pri-miRNA transcription by RNA polymerase II	GO:0061614	biological_function
+PPARA	5465	protein	regulation of glycolytic process by positive regulation of transcription from RNA polymerase II promoter	GO:0072363	biological_function
+PPARA	5465	protein	regulation of cellular ketone metabolic process by positive regulation of transcription from RNA polymerase II promoter	GO:0072366	biological_function
+PPARA	5465	protein	regulation of lipid transport by positive regulation of transcription from RNA polymerase II promoter	GO:0072369	biological_function
+PPARA	5465	protein	negative regulation of pri-miRNA transcription by RNA polymerase II	GO:1902894	biological_function
+PPARG	5468	protein	negative regulation of vascular smooth muscle cell proliferation	GO:1904706	biological_function
+PPARG	5468	protein	positive regulation of vascular associated smooth muscle cell apoptotic process	GO:1905461	biological_function
+PPARG	5468	protein	negative regulation of vascular endothelial cell proliferation	GO:1905563	biological_function
+negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function	negative regulation of transcription, DNA-templated	GO:0045892	biological_function
+apoptotic signaling pathway	GO:0097190	biological_function	apoptotic process	GO:0006915	biological_function
+apoptotic signaling pathway	GO:0097190	biological_function	signal transduction	GO:0007165	biological_function
+positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+negative regulation of macrophage derived foam cell differentiation	GO:0010745	biological_function	macrophage derived foam cell differentiation	GO:0010742	biological_function
+regulation of glycolytic process by positive regulation of transcription from RNA polymerase II promoter	GO:0072363	biological_function	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+regulation of cellular ketone metabolic process by positive regulation of transcription from RNA polymerase II promoter	GO:0072366	biological_function	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+regulation of lipid transport by positive regulation of transcription from RNA polymerase II promoter	GO:0072369	biological_function	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+negative regulation of pri-miRNA transcription by RNA polymerase II	GO:1902894	biological_function	pri-miRNA transcription by RNA polymerase II	GO:0061614	biological_function
+negative regulation of pri-miRNA transcription by RNA polymerase II	GO:1902894	biological_function	negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function
+negative regulation of vascular smooth muscle cell proliferation	GO:1904706	biological_function	negative regulation of smooth muscle cell proliferation	GO:0048662	biological_function

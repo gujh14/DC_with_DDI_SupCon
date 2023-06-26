@@ -1,0 +1,5 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+latanoprost	DB00654	drug	PTGFR	5737	protein
+timolol	DB00373	drug	ADRB1	153	protein
+timolol	DB00373	drug	ADRB2	154	protein
+ocular hypertension	C0028840	indication	NR3C1	2908	protein

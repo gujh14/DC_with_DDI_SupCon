@@ -1,0 +1,179 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+milrinone	DB00235	drug	PDE3B	5140	protein
+milrinone	DB00235	drug	PDE3A	5139	protein
+milrinone	DB00235	drug	PDE2A	5138	protein
+milrinone	DB00235	drug	PDE5A	8654	protein
+esmolol	DB00187	drug	ADRB1	153	protein
+Myocardial Infarction	C0027051	indication	APOB	338	protein
+Myocardial Infarction	C0027051	indication	ESR1	2099	protein
+Myocardial Infarction	C0027051	indication	TGFB1	7040	protein
+Myocardial Infarction	C0027051	indication	HSPA5	3309	protein
+Myocardial Infarction	C0027051	indication	JAK2	3717	protein
+Myocardial Infarction	C0027051	indication	LMNA	4000	protein
+Myocardial Infarction	C0027051	indication	BCL2	596	protein
+Myocardial Infarction	C0027051	indication	NRIP1	8204	protein
+Myocardial Infarction	C0027051	indication	ATM	472	protein
+Myocardial Infarction	C0027051	indication	TNNI3	7137	protein
+Myocardial Infarction	C0027051	indication	TP53	7157	protein
+Myocardial Infarction	C0027051	indication	BCL2L1	598	protein
+Myocardial Infarction	C0027051	indication	BAX	581	protein
+Myocardial Infarction	C0027051	indication	ABCA1	19	protein
+Myocardial Infarction	C0027051	indication	CBS	875	protein
+Myocardial Infarction	C0027051	indication	MLX	6945	protein
+Myocardial Infarction	C0027051	indication	DDIT3	1649	protein
+Myocardial Infarction	C0027051	indication	CKB	1152	protein
+Myocardial Infarction	C0027051	indication	LDLRAP1	26119	protein
+Myocardial Infarction	C0027051	indication	KIF6	221458	protein
+Myocardial Infarction	C0027051	indication	S100B	6285	protein
+Myocardial Infarction	C0027051	indication	HLA-B	3106	protein
+Myocardial Infarction	C0027051	indication	MYH9	4627	protein
+Myocardial Infarction	C0027051	indication	MYH7	4625	protein
+Myocardial Infarction	C0027051	indication	CALR	811	protein
+Myocardial Infarction	C0027051	indication	TIMP2	7077	protein
+Myocardial Infarction	C0027051	indication	VDAC1	7416	protein
+Myocardial Infarction	C0027051	indication	PSMA6	5687	protein
+Myocardial Infarction	C0027051	indication	TNF	7124	protein
+Myocardial Infarction	C0027051	indication	CASP3	836	protein
+Myocardial Infarction	C0027051	indication	CREB1	1385	protein
+Myocardial Infarction	C0027051	indication	WRN	7486	protein
+Myocardial Infarction	C0027051	indication	SELL	6402	protein
+Myocardial Infarction	C0027051	indication	PHACTR1	221692	protein
+Myocardial Infarction	C0027051	indication	PPARGC1A	10891	protein
+Myocardial Infarction	C0027051	indication	IL6	3569	protein
+Myocardial Infarction	C0027051	indication	MMP9	4318	protein
+Myocardial Infarction	C0027051	indication	APOE	348	protein
+Myocardial Infarction	C0027051	indication	LRP8	7804	protein
+Myocardial Infarction	C0027051	indication	LPL	4023	protein
+Myocardial Infarction	C0027051	indication	F2	2147	protein
+Myocardial Infarction	C0027051	indication	NOS3	4846	protein
+Myocardial Infarction	C0027051	indication	REN	5972	protein
+Myocardial Infarction	C0027051	indication	CREM	1390	protein
+Myocardial Infarction	C0027051	indication	THBD	7056	protein
+Myocardial Infarction	C0027051	indication	LDLR	3949	protein
+Myocardial Infarction	C0027051	indication	ITGB3	3690	protein
+Myocardial Infarction	C0027051	indication	MMP2	4313	protein
+Myocardial Infarction	C0027051	indication	IFNA2	3440	protein
+Myocardial Infarction	C0027051	indication	NOS2	4843	protein
+Myocardial Infarction	C0027051	indication	IL10	3586	protein
+Myocardial Infarction	C0027051	indication	LTA	4049	protein
+Myocardial Infarction	C0027051	indication	F13A1	2162	protein
+Myocardial Infarction	C0027051	indication	ENPP1	5167	protein
+Myocardial Infarction	C0027051	indication	MPL	4352	protein
+Myocardial Infarction	C0027051	indication	SH2B3	10019	protein
+Myocardial Infarction	C0027051	indication	DAB2IP	153090	protein
+Myocardial Infarction	C0027051	indication	F5	2153	protein
+Myocardial Infarction	C0027051	indication	PAPPA	5069	protein
+Myocardial Infarction	C0027051	indication	LDHA	3939	protein
+Myocardial Infarction	C0027051	indication	HP	3240	protein
+Myocardial Infarction	C0027051	indication	IL12B	3593	protein
+Myocardial Infarction	C0027051	indication	CKM	1158	protein
+Myocardial Infarction	C0027051	indication	ACTA2	59	protein
+Myocardial Infarction	C0027051	indication	IL1B	3553	protein
+Myocardial Infarction	C0027051	indication	LGALS2	3957	protein
+Myocardial Infarction	C0027051	indication	WDR12	55759	protein
+Myocardial Infarction	C0027051	indication	HSD11B2	3291	protein
+Myocardial Infarction	C0027051	indication	MIA3	375056	protein
+Myocardial Infarction	C0027051	indication	TET2	54790	protein
+Myocardial Infarction	C0027051	indication	GCLC	2729	protein
+Myocardial Infarction	C0027051	indication	OLR1	4973	protein
+Myocardial Infarction	C0027051	indication	GCLM	2730	protein
+Myocardial Infarction	C0027051	indication	GGT1	2678	protein
+Myocardial Infarction	C0027051	indication	PDE3A	5139	protein
+Myocardial Infarction	C0027051	indication	CYP27A1	1593	protein
+Myocardial Infarction	C0027051	indication	TNFSF4	7292	protein
+Myocardial Infarction	C0027051	indication	EPO	2056	protein
+Myocardial Infarction	C0027051	indication	AGT	183	protein
+Myocardial Infarction	C0027051	indication		64805	protein
+Myocardial Infarction	C0027051	indication		4306	protein
+Myocardial Infarction	C0027051	indication	GLA	2717	protein
+Myocardial Infarction	C0027051	indication	BRAP	8315	protein
+Myocardial Infarction	C0027051	indication		51330	protein
+APOB	338	protein	CALR	811	protein
+APOB	338	protein	HSPA5	3309	protein
+APOB	338	protein	MYH9	4627	protein
+APOB	338	protein	MIA3	375056	protein
+APOB	338	protein	LDLR	3949	protein
+ESR1	2099	protein	TP53	7157	protein
+ESR1	2099	protein	NRIP1	8204	protein
+ESR1	2099	protein	PPARGC1A	10891	protein
+ESR1	2099	protein	MYH9	4627	protein
+ESR1	2099	protein	HSPA5	3309	protein
+ESR1	2099	protein	NOS3	4846	protein
+ESR1	2099	protein	APOE	348	protein
+TGFB1	7040	protein	MMP9	4318	protein
+TGFB1	7040	protein	MMP2	4313	protein
+TGFB1	7040	protein	HSPA5	3309	protein
+HSPA5	3309	protein	LDLR	3949	protein
+HSPA5	3309	protein	TP53	7157	protein
+HSPA5	3309	protein	MYH9	4627	protein
+HSPA5	3309	protein	NOS2	4843	protein
+HSPA5	3309	protein	HLA-B	3106	protein
+HSPA5	3309	protein	PDE3A	5139	protein
+HSPA5	3309	protein	DDIT3	1649	protein
+HSPA5	3309	protein	TNF	7124	protein
+HSPA5	3309	protein	PSMA6	5687	protein
+HSPA5	3309	protein	CALR	811	protein
+JAK2	3717	protein	MPL	4352	protein
+LMNA	4000	protein	TP53	7157	protein
+LMNA	4000	protein	THBD	7056	protein
+LMNA	4000	protein	TNF	7124	protein
+BCL2	596	protein	BAX	581	protein
+BCL2	596	protein	CASP3	836	protein
+BCL2	596	protein	BCL2L1	598	protein
+BCL2	596	protein	TP53	7157	protein
+BCL2	596	protein	VDAC1	7416	protein
+NRIP1	8204	protein	PPARGC1A	10891	protein
+ATM	472	protein	TP53	7157	protein
+ATM	472	protein	WRN	7486	protein
+ATM	472	protein	CREB1	1385	protein
+TNNI3	7137	protein	PAPPA	5069	protein
+TP53	7157	protein	S100B	6285	protein
+TP53	7157	protein	CREB1	1385	protein
+TP53	7157	protein	WRN	7486	protein
+TP53	7157	protein	DAB2IP	153090	protein
+TP53	7157	protein	BCL2L1	598	protein
+TP53	7157	protein	PPARGC1A	10891	protein
+TP53	7157	protein	ACTA2	59	protein
+TP53	7157	protein	MYH9	4627	protein
+TP53	7157	protein	BAX	581	protein
+TP53	7157	protein	CASP3	836	protein
+TP53	7157	protein	MMP2	4313	protein
+BCL2L1	598	protein	BAX	581	protein
+BCL2L1	598	protein	VDAC1	7416	protein
+BAX	581	protein	VDAC1	7416	protein
+BAX	581	protein	CASP3	836	protein
+DDIT3	1649	protein	F2	2147	protein
+CKB	1152	protein	CKM	1158	protein
+CKB	1152	protein	VDAC1	7416	protein
+LDLRAP1	26119	protein	LDLR	3949	protein
+HLA-B	3106	protein	CALR	811	protein
+HLA-B	3106	protein	PSMA6	5687	protein
+HLA-B	3106	protein	VDAC1	7416	protein
+MYH9	4627	protein	ACTA2	59	protein
+MYH9	4627	protein	TNF	7124	protein
+MYH9	4627	protein	TET2	54790	protein
+CALR	811	protein	F5	2153	protein
+CALR	811	protein	LPL	4023	protein
+TIMP2	7077	protein	MMP2	4313	protein
+TIMP2	7077	protein	PSMA6	5687	protein
+VDAC1	7416	protein	APOE	348	protein
+VDAC1	7416	protein	LDHA	3939	protein
+PSMA6	5687	protein	NOS2	4843	protein
+TNF	7124	protein	LTA	4049	protein
+CASP3	836	protein	PDE5A	8654	protein
+CREB1	1385	protein	CREM	1390	protein
+APOE	348	protein	LRP8	7804	protein
+APOE	348	protein	NOS3	4846	protein
+APOE	348	protein	LDLR	3949	protein
+APOE	348	protein	HP	3240	protein
+F2	2147	protein	THBD	7056	protein
+F2	2147	protein	F5	2153	protein
+F2	2147	protein	F13A1	2162	protein
+NOS3	4846	protein	NOS2	4843	protein
+REN	5972	protein	AGT	183	protein
+ITGB3	3690	protein	MMP2	4313	protein
+MMP2	4313	protein	IL1B	3553	protein
+LTA	4049	protein	LGALS2	3957	protein
+F5	2153	protein	OLR1	4973	protein
+LDHA	3939	protein	TET2	54790	protein
+GCLC	2729	protein	GCLM	2730	protein

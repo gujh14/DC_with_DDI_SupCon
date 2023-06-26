@@ -1,0 +1,105 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+ketoconazole	DB01026	drug	AR	367	protein
+ketoconazole	DB01026	drug	KCNH2	3757	protein
+ketoconazole	DB01026	drug	NR1I2	8856	protein
+ketoconazole	DB01026	drug	CYP21A2	1589	protein
+ketoconazole	DB01026	drug	KCNA10	3744	protein
+ketoconazole	DB01026	drug	CYP19A1	1588	protein
+ketoconazole	DB01026	drug		9970	protein
+simvastatin	DB00641	drug	ITGB2	3689	protein
+simvastatin	DB00641	drug	HMGCR	3156	protein
+simvastatin	DB00641	drug	ITGAL	3683	protein
+ITGB2	3689	protein	ITGAL	3683	protein
+AR	367	protein	negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function
+NR1I2	8856	protein	negative regulation of transcription, DNA-templated	GO:0045892	biological_function
+KCNH2	3757	protein	regulation of membrane potential	GO:0042391	biological_function
+AR	367	protein	positive regulation of phosphorylation	GO:0042327	biological_function
+ITGAL	3683	protein	cell-matrix adhesion	GO:0007160	biological_function
+ITGB2	3689	protein	cell-matrix adhesion	GO:0007160	biological_function
+AR	367	protein	positive regulation of cell proliferation	GO:0008284	biological_function
+AR	367	protein	intracellular receptor signaling pathway	GO:0030522	biological_function
+ITGAL	3683	protein	T cell activation via T cell receptor contact with antigen bound to MHC molecule on antigen presenting cell	GO:0002291	biological_function
+AR	367	protein	transcription, DNA-templated	GO:0006351	biological_function
+CYP21A2	1589	protein	steroid biosynthetic process	GO:0006694	biological_function
+CYP21A2	1589	protein	steroid metabolic process	GO:0008202	biological_function
+HMGCR	3156	protein	cholesterol biosynthetic process	GO:0006695	biological_function
+CYP19A1	1588	protein	androgen catabolic process	GO:0006710	biological_function
+NR1I2	8856	protein	xenobiotic metabolic process	GO:0006805	biological_function
+AR	367	protein	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+NR1I2	8856	protein	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+ITGAL	3683	protein	heterophilic cell-cell adhesion via plasma membrane cell adhesion molecules	GO:0007157	biological_function
+ITGAL	3683	protein	leukocyte cell-cell adhesion	GO:0007159	biological_function
+ITGB2	3689	protein	leukocyte cell-cell adhesion	GO:0007159	biological_function
+AR	367	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+NR1I2	8856	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+	9970	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+ITGB2	3689	protein	integrin-mediated signaling pathway	GO:0007229	biological_function
+AR	367	protein	negative regulation of cell proliferation	GO:0008285	biological_function
+KCNH2	3757	protein	potassium ion transmembrane transport	GO:0071805	biological_function
+AR	367	protein	positive regulation of cell differentiation	GO:0045597	biological_function
+ITGB2	3689	protein	regulation of peptidyl-tyrosine phosphorylation	GO:0050730	biological_function
+AR	367	protein	positive regulation of gene expression	GO:0010628	biological_function
+KCNH2	3757	protein	potassium ion homeostasis	GO:0055075	biological_function
+AR	367	protein	androgen receptor signaling pathway	GO:0030521	biological_function
+ITGB2	3689	protein	neutrophil chemotaxis	GO:0030593	biological_function
+ITGB2	3689	protein	neutrophil migration	GO:1990266	biological_function
+AR	367	protein	protein oligomerization	GO:0051259	biological_function
+ITGB2	3689	protein	positive regulation of superoxide anion generation	GO:0032930	biological_function
+ITGB2	3689	protein	heterotypic cell-cell adhesion	GO:0034113	biological_function
+KCNH2	3757	protein	cellular response to drug	GO:0035690	biological_function
+NR1I2	8856	protein	exogenous drug catabolic process	GO:0042738	biological_function
+NR1I2	8856	protein	xenobiotic transport	GO:0042908	biological_function
+AR	367	protein	regulation of protein localization to plasma membrane	GO:1903076	biological_function
+ITGAL	3683	protein	receptor clustering	GO:0043113	biological_function
+ITGB2	3689	protein	receptor clustering	GO:0043113	biological_function
+ITGB2	3689	protein	positive regulation of neutrophil degranulation	GO:0043315	biological_function
+AR	367	protein	cellular response to steroid hormone stimulus	GO:0071383	biological_function
+AR	367	protein	negative regulation of integrin biosynthetic process	GO:0045720	biological_function
+AR	367	protein	positive regulation of integrin biosynthetic process	GO:0045726	biological_function
+AR	367	protein	positive regulation of transcription by RNA polymerase III	GO:0045945	biological_function
+NR1I2	8856	protein	drug export	GO:0046618	biological_function
+AR	367	protein	positive regulation of NF-kappaB transcription factor activity	GO:0051092	biological_function
+HMGCR	3156	protein	protein tetramerization	GO:0051262	biological_function
+KCNH2	3757	protein	cardiac muscle contraction	GO:0060048	biological_function
+KCNH2	3757	protein	regulation of membrane repolarization	GO:0060306	biological_function
+KCNH2	3757	protein	membrane repolarization	GO:0086009	biological_function
+KCNH2	3757	protein	regulation of ventricular cardiac muscle cell membrane repolarization	GO:0060307	biological_function
+KCNH2	3757	protein	potassium ion export	GO:0071435	biological_function
+KCNH2	3757	protein	ventricular cardiac muscle cell action potential	GO:0086005	biological_function
+KCNH2	3757	protein	membrane depolarization during action potential	GO:0086010	biological_function
+KCNH2	3757	protein	membrane repolarization during action potential	GO:0086011	biological_function
+KCNH2	3757	protein	membrane repolarization during cardiac muscle cell action potential	GO:0086013	biological_function
+KCNH2	3757	protein	regulation of heart rate by cardiac conduction	GO:0086091	biological_function
+KCNH2	3757	protein	potassium ion export across plasma membrane	GO:0097623	biological_function
+KCNH2	3757	protein	membrane repolarization during ventricular cardiac muscle cell action potential	GO:0098915	biological_function
+KCNH2	3757	protein	regulation of potassium ion transmembrane transport	GO:1901379	biological_function
+KCNH2	3757	protein	negative regulation of potassium ion transmembrane transport	GO:1901380	biological_function
+KCNH2	3757	protein	positive regulation of potassium ion transmembrane transport	GO:1901381	biological_function
+AR	367	protein	negative regulation of extrinsic apoptotic signaling pathway	GO:2001237	biological_function
+KCNH2	3757	protein	negative regulation of potassium ion export	GO:1902303	biological_function
+CYP19A1	1588	protein	positive regulation of estradiol secretion	GO:2000866	biological_function
+negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function	negative regulation of transcription, DNA-templated	GO:0045892	biological_function
+negative regulation of transcription, DNA-templated	GO:0045892	biological_function	transcription, DNA-templated	GO:0006351	biological_function
+steroid biosynthetic process	GO:0006694	biological_function	steroid metabolic process	GO:0008202	biological_function
+positive regulation of transcription, DNA-templated	GO:0045893	biological_function	transcription, DNA-templated	GO:0006351	biological_function
+positive regulation of transcription, DNA-templated	GO:0045893	biological_function	positive regulation of gene expression	GO:0010628	biological_function
+positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+neutrophil chemotaxis	GO:0030593	biological_function	neutrophil migration	GO:1990266	biological_function
+positive regulation of transcription by RNA polymerase III	GO:0045945	biological_function	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+protein tetramerization	GO:0051262	biological_function	protein oligomerization	GO:0051259	biological_function
+regulation of membrane repolarization	GO:0060306	biological_function	membrane repolarization	GO:0086009	biological_function
+regulation of membrane repolarization	GO:0060306	biological_function	regulation of membrane potential	GO:0042391	biological_function
+membrane repolarization	GO:0086009	biological_function	regulation of membrane potential	GO:0042391	biological_function
+potassium ion export	GO:0071435	biological_function	potassium ion transmembrane transport	GO:0071805	biological_function
+membrane repolarization during action potential	GO:0086011	biological_function	membrane repolarization	GO:0086009	biological_function
+membrane repolarization during cardiac muscle cell action potential	GO:0086013	biological_function	membrane repolarization during action potential	GO:0086011	biological_function
+potassium ion export across plasma membrane	GO:0097623	biological_function	potassium ion export	GO:0071435	biological_function
+membrane repolarization during ventricular cardiac muscle cell action potential	GO:0098915	biological_function	ventricular cardiac muscle cell action potential	GO:0086005	biological_function
+membrane repolarization during ventricular cardiac muscle cell action potential	GO:0098915	biological_function	membrane repolarization during cardiac muscle cell action potential	GO:0086013	biological_function
+regulation of potassium ion transmembrane transport	GO:1901379	biological_function	potassium ion transmembrane transport	GO:0071805	biological_function
+negative regulation of potassium ion transmembrane transport	GO:1901380	biological_function	potassium ion transmembrane transport	GO:0071805	biological_function
+negative regulation of potassium ion transmembrane transport	GO:1901380	biological_function	regulation of potassium ion transmembrane transport	GO:1901379	biological_function
+positive regulation of potassium ion transmembrane transport	GO:1901381	biological_function	potassium ion transmembrane transport	GO:0071805	biological_function
+positive regulation of potassium ion transmembrane transport	GO:1901381	biological_function	regulation of potassium ion transmembrane transport	GO:1901379	biological_function
+negative regulation of potassium ion export	GO:1902303	biological_function	potassium ion export	GO:0071435	biological_function
+negative regulation of potassium ion export	GO:1902303	biological_function	negative regulation of potassium ion transmembrane transport	GO:1901380	biological_function

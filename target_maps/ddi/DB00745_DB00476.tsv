@@ -1,0 +1,40 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+modafinil	DB00745	drug	SLC6A3	6531	protein
+modafinil	DB00745	drug	ADRA1B	147	protein
+duloxetine	DB00476	drug	HTR2C	3358	protein
+duloxetine	DB00476	drug	HTR2A	3356	protein
+duloxetine	DB00476	drug	SLC6A3	6531	protein
+duloxetine	DB00476	drug	SLC6A4	6532	protein
+duloxetine	DB00476	drug	SLC6A2	6530	protein
+duloxetine	DB00476	drug	HTR6	3362	protein
+HTR2C	3358	protein	cGMP biosynthetic process	GO:0006182	biological_function
+SLC6A4	6532	protein	serotonin transport	GO:0006837	biological_function
+SLC6A2	6530	protein	monoamine transport	GO:0015844	biological_function
+SLC6A3	6531	protein	monoamine transport	GO:0015844	biological_function
+SLC6A4	6532	protein	monoamine transport	GO:0015844	biological_function
+HTR2A	3356	protein	cellular calcium ion homeostasis	GO:0006874	biological_function
+HTR2C	3358	protein	cellular calcium ion homeostasis	GO:0006874	biological_function
+HTR2C	3358	protein	phospholipase C-activating G-protein coupled receptor signaling pathway	GO:0007200	biological_function
+HTR2A	3356	protein	activation of phospholipase C activity	GO:0007202	biological_function
+HTR2A	3356	protein	serotonin receptor signaling pathway	GO:0007210	biological_function
+HTR2C	3358	protein	serotonin receptor signaling pathway	GO:0007210	biological_function
+SLC6A4	6532	protein	response to toxic substance	GO:0009636	biological_function
+HTR2A	3356	protein	positive regulation of phosphatidylinositol biosynthetic process	GO:0010513	biological_function
+HTR2C	3358	protein	positive regulation of phosphatidylinositol biosynthetic process	GO:0010513	biological_function
+HTR2A	3356	protein	phosphatidylinositol 3-kinase signaling	GO:0014065	biological_function
+SLC6A3	6531	protein	dopamine transport	GO:0015872	biological_function
+HTR2A	3356	protein	response to drug	GO:0042493	biological_function
+HTR2C	3358	protein	response to drug	GO:0042493	biological_function
+HTR6	3362	protein	positive regulation of TOR signaling	GO:0032008	biological_function
+ADRA1B	147	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+HTR2A	3356	protein	release of sequestered calcium ion into cytosol	GO:0051209	biological_function
+HTR2C	3358	protein	release of sequestered calcium ion into cytosol	GO:0051209	biological_function
+SLC6A4	6532	protein	serotonin uptake	GO:0051610	biological_function
+HTR2A	3356	protein	positive regulation of ERK1 and ERK2 cascade	GO:0070374	biological_function
+HTR2C	3358	protein	positive regulation of ERK1 and ERK2 cascade	GO:0070374	biological_function
+SLC6A4	6532	protein	regulation of thalamus size	GO:0090067	biological_function
+SLC6A3	6531	protein	dopamine uptake	GO:0090494	biological_function
+serotonin transport	GO:0006837	biological_function	monoamine transport	GO:0015844	biological_function
+serotonin uptake	GO:0051610	biological_function	serotonin transport	GO:0006837	biological_function
+positive regulation of ERK1 and ERK2 cascade	GO:0070374	biological_function	positive regulation of MAPK cascade	GO:0043410	biological_function
+dopamine uptake	GO:0090494	biological_function	dopamine transport	GO:0015872	biological_function

@@ -1,0 +1,13 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+dutasteride	DB01126	drug	SRD5A1	6715	protein
+dutasteride	DB01126	drug	SRD5A2	6716	protein
+tamsulosin	DB00706	drug	ADRA1B	147	protein
+tamsulosin	DB00706	drug	ADRA1D	146	protein
+tamsulosin	DB00706	drug	ADRA1A	148	protein
+Prostatic Hyperplasia	C2937421	indication	FGF7	2252	protein
+Prostatic Hyperplasia	C2937421	indication	KLK3	354	protein
+Prostatic Hyperplasia	C2937421	indication	PRL	5617	protein
+Prostatic Hyperplasia	C2937421	indication	SRD5A2	6716	protein
+ADRA1B	147	protein	ADRA1D	146	protein
+ADRA1B	147	protein	ADRA1A	148	protein
+ADRA1D	146	protein	ADRA1A	148	protein

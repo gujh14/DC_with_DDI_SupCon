@@ -1,0 +1,91 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+celecoxib	DB00482	drug	PDPK1	5170	protein
+celecoxib	DB00482	drug	PTGS2	5743	protein
+celecoxib	DB00482	drug	CA2	760	protein
+celecoxib	DB00482	drug	CA12	771	protein
+celecoxib	DB00482	drug	ABCB1	5243	protein
+celecoxib	DB00482	drug	CA3	761	protein
+celecoxib	DB00482	drug	ABCG2	9429	protein
+celecoxib	DB00482	drug	ABCB5	340273	protein
+clonidine	DB00575	drug	ADRA1B	147	protein
+clonidine	DB00575	drug	ADRA2B	151	protein
+clonidine	DB00575	drug	ADRA2C	152	protein
+clonidine	DB00575	drug	ADRA2A	150	protein
+clonidine	DB00575	drug	ADRA1D	146	protein
+clonidine	DB00575	drug	ADRA1A	148	protein
+ADRA1B	147	protein	ADRA1D	146	protein
+ADRA1B	147	protein	ADRA1A	148	protein
+ADRA1D	146	protein	ADRA1A	148	protein
+ABCB1	5243	protein	G2/M transition of mitotic cell cycle	GO:0000086	biological_function
+PDPK1	5170	protein	intracellular signal transduction	GO:0035556	biological_function
+ADRA2A	150	protein	activation of protein kinase activity	GO:0032147	biological_function
+ADRA2A	150	protein	positive regulation of MAP kinase activity	GO:0043406	biological_function
+ABCB5	340273	protein	regulation of membrane potential	GO:0042391	biological_function
+PDPK1	5170	protein	cell migration	GO:0016477	biological_function
+ADRA2A	150	protein	glucose homeostasis	GO:0042593	biological_function
+ADRA2A	150	protein	positive regulation of cytokine production	GO:0001819	biological_function
+PDPK1	5170	protein	protein phosphorylation	GO:0006468	biological_function
+ADRA2A	150	protein	positive regulation of cell migration	GO:0030335	biological_function
+PDPK1	5170	protein	negative regulation of protein kinase activity	GO:0006469	biological_function
+ABCB5	340273	protein	transmembrane transport	GO:0055085	biological_function
+PDPK1	5170	protein	epidermal growth factor receptor signaling pathway	GO:0007173	biological_function
+PDPK1	5170	protein	cellular response to insulin stimulus	GO:0032869	biological_function
+PDPK1	5170	protein	extrinsic apoptotic signaling pathway	GO:0097191	biological_function
+ADRA2A	150	protein	cellular response to hormone stimulus	GO:0032870	biological_function
+PDPK1	5170	protein	positive regulation of phospholipase activity	GO:0010518	biological_function
+PDPK1	5170	protein	peptidyl-threonine phosphorylation	GO:0018107	biological_function
+PDPK1	5170	protein	calcium-mediated signaling	GO:0019722	biological_function
+ADRA2A	150	protein	negative regulation of lipid catabolic process	GO:0050995	biological_function
+CA2	760	protein	regulation of anion transport	GO:0044070	biological_function
+ADRA2B	151	protein	positive regulation of neuron differentiation	GO:0045666	biological_function
+ADRA2C	152	protein	positive regulation of neuron differentiation	GO:0045666	biological_function
+PTGS2	5743	protein	cyclooxygenase pathway	GO:0019371	biological_function
+ADRA2A	150	protein	positive regulation of wound healing	GO:0090303	biological_function
+PDPK1	5170	protein	negative regulation of transforming growth factor beta receptor signaling pathway	GO:0030512	biological_function
+CA12	771	protein	chloride ion homeostasis	GO:0055064	biological_function
+ADRA2A	150	protein	negative regulation of cAMP biosynthetic process	GO:0030818	biological_function
+PDPK1	5170	protein	positive regulation of release of sequestered calcium ion into cytosol	GO:0051281	biological_function
+ADRA2A	150	protein	activation of protein kinase B activity	GO:0032148	biological_function
+ADRA2B	151	protein	activation of protein kinase B activity	GO:0032148	biological_function
+ADRA2C	152	protein	activation of protein kinase B activity	GO:0032148	biological_function
+PDPK1	5170	protein	activation of protein kinase B activity	GO:0032148	biological_function
+ADRA1B	147	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+ADRA1A	148	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+ADRA2A	150	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+ADRA2B	151	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+ADRA2C	152	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+ABCG2	9429	protein	urate metabolic process	GO:0046415	biological_function
+PDPK1	5170	protein	positive regulation of angiogenesis	GO:0045766	biological_function
+ADRA2A	150	protein	epidermal growth factor-activated receptor transactivation by G-protein coupled receptor signaling pathway	GO:0035625	biological_function
+ADRA2B	151	protein	epidermal growth factor-activated receptor transactivation by G-protein coupled receptor signaling pathway	GO:0035625	biological_function
+ADRA2C	152	protein	epidermal growth factor-activated receptor transactivation by G-protein coupled receptor signaling pathway	GO:0035625	biological_function
+ADRA2A	150	protein	positive regulation of epidermal growth factor-activated receptor activity	GO:0045741	biological_function
+CA2	760	protein	angiotensin-activated signaling pathway	GO:0038166	biological_function
+PDPK1	5170	protein	regulation of I-kappaB kinase/NF-kappaB signaling	GO:0043122	biological_function
+PDPK1	5170	protein	positive regulation of protein localization to plasma membrane	GO:1903078	biological_function
+PDPK1	5170	protein	positive regulation of blood vessel endothelial cell migration	GO:0043536	biological_function
+ABCB1	5243	protein	phospholipid translocation	GO:0045332	biological_function
+ADRA2A	150	protein	negative regulation of insulin secretion	GO:0046676	biological_function
+ABCB1	5243	protein	regulation of response to osmotic stress	GO:0047484	biological_function
+ADRA2A	150	protein	positive regulation of membrane protein ectodomain proteolysis	GO:0051044	biological_function
+ADRA2A	150	protein	negative regulation of insulin secretion involved in cellular response to glucose stimulus	GO:0061179	biological_function
+PDPK1	5170	protein	cellular response to epidermal growth factor stimulus	GO:0071364	biological_function
+ABCB1	5243	protein	stem cell proliferation	GO:0072089	biological_function
+ADRA2A	150	protein	adrenergic receptor signaling pathway	GO:0071875	biological_function
+ADRA2B	151	protein	adrenergic receptor signaling pathway	GO:0071875	biological_function
+ADRA2C	152	protein	adrenergic receptor signaling pathway	GO:0071875	biological_function
+ADRA2A	150	protein	adenylate cyclase-inhibiting adrenergic receptor signaling pathway	GO:0071881	biological_function
+ADRA2A	150	protein	phospholipase C-activating adrenergic receptor signaling pathway	GO:0071882	biological_function
+ABCB1	5243	protein	ceramide translocation	GO:0099040	biological_function
+ABCB1	5243	protein	positive regulation of anion channel activity	GO:1901529	biological_function
+ABCB1	5243	protein	regulation of chloride transport	GO:2001225	biological_function
+PDPK1	5170	protein	positive regulation of vascular endothelial cell proliferation	GO:1905564	biological_function
+positive regulation of MAP kinase activity	GO:0043406	biological_function	positive regulation of MAPK cascade	GO:0043410	biological_function
+positive regulation of cell migration	GO:0030335	biological_function	cell migration	GO:0016477	biological_function
+peptidyl-threonine phosphorylation	GO:0018107	biological_function	protein phosphorylation	GO:0006468	biological_function
+activation of protein kinase B activity	GO:0032148	biological_function	activation of protein kinase activity	GO:0032147	biological_function
+epidermal growth factor-activated receptor transactivation by G-protein coupled receptor signaling pathway	GO:0035625	biological_function	positive regulation of epidermal growth factor-activated receptor activity	GO:0045741	biological_function
+negative regulation of insulin secretion involved in cellular response to glucose stimulus	GO:0061179	biological_function	negative regulation of insulin secretion	GO:0046676	biological_function
+adenylate cyclase-inhibiting adrenergic receptor signaling pathway	GO:0071881	biological_function	adrenergic receptor signaling pathway	GO:0071875	biological_function
+phospholipase C-activating adrenergic receptor signaling pathway	GO:0071882	biological_function	adrenergic receptor signaling pathway	GO:0071875	biological_function
+regulation of chloride transport	GO:2001225	biological_function	regulation of anion transport	GO:0044070	biological_function

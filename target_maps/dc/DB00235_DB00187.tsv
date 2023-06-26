@@ -1,0 +1,36 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+milrinone	DB00235	drug	PDE3B	5140	protein
+milrinone	DB00235	drug	PDE3A	5139	protein
+milrinone	DB00235	drug	PDE2A	5138	protein
+milrinone	DB00235	drug	PDE5A	8654	protein
+esmolol	DB00187	drug	ADRB1	153	protein
+PDE2A	5138	protein	negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function
+PDE2A	5138	protein	cAMP catabolic process	GO:0006198	biological_function
+PDE3A	5139	protein	cAMP catabolic process	GO:0006198	biological_function
+PDE3B	5140	protein	negative regulation of cell adhesion	GO:0007162	biological_function
+PDE2A	5138	protein	cAMP-mediated signaling	GO:0019933	biological_function
+PDE3A	5139	protein	cAMP-mediated signaling	GO:0019933	biological_function
+PDE2A	5138	protein	cGMP-mediated signaling	GO:0019934	biological_function
+PDE3A	5139	protein	cGMP-mediated signaling	GO:0019934	biological_function
+PDE3B	5140	protein	negative regulation of lipid catabolic process	GO:0050995	biological_function
+PDE3B	5140	protein	negative regulation of angiogenesis	GO:0016525	biological_function
+ADRB1	153	protein	positive regulation of cAMP biosynthetic process	GO:0030819	biological_function
+PDE2A	5138	protein	negative regulation of protein import into nucleus, translocation	GO:0033159	biological_function
+PDE2A	5138	protein	cellular response to drug	GO:0035690	biological_function
+PDE2A	5138	protein	cellular response to macrophage colony-stimulating factor stimulus	GO:0036006	biological_function
+PDE2A	5138	protein	negative regulation of vascular permeability	GO:0043116	biological_function
+PDE3A	5139	protein	negative regulation of vascular permeability	GO:0043116	biological_function
+PDE2A	5138	protein	positive regulation of vascular permeability	GO:0043117	biological_function
+PDE3A	5139	protein	positive regulation of vascular permeability	GO:0043117	biological_function
+ADRB1	153	protein	positive regulation of GTPase activity	GO:0043547	biological_function
+ADRB1	153	protein	positive regulation of cAMP-mediated signaling	GO:0043950	biological_function
+PDE2A	5138	protein	negative regulation of cAMP-mediated signaling	GO:0043951	biological_function
+PDE2A	5138	protein	cGMP catabolic process	GO:0046069	biological_function
+PDE5A	8654	protein	cGMP catabolic process	GO:0046069	biological_function
+PDE2A	5138	protein	cellular response to cAMP	GO:0071320	biological_function
+PDE2A	5138	protein	cellular response to cGMP	GO:0071321	biological_function
+PDE3A	5139	protein	cellular response to cGMP	GO:0071321	biological_function
+ADRB1	153	protein	adenylate cyclase-activating adrenergic receptor signaling pathway	GO:0071880	biological_function
+PDE2A	5138	protein	cellular response to 2,3,7,8-tetrachlorodibenzodioxine	GO:1904613	biological_function
+positive regulation of cAMP-mediated signaling	GO:0043950	biological_function	cAMP-mediated signaling	GO:0019933	biological_function
+negative regulation of cAMP-mediated signaling	GO:0043951	biological_function	cAMP-mediated signaling	GO:0019933	biological_function

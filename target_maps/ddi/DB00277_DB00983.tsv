@@ -1,0 +1,123 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+Theophylline	DB00277	drug	PDE4D	5144	protein
+Theophylline	DB00277	drug	HDAC2	3066	protein
+Theophylline	DB00277	drug	HM13	81502	protein
+Theophylline	DB00277	drug	PARP1	142	protein
+Theophylline	DB00277	drug	NOMO1	23420	protein
+Theophylline	DB00277	drug	ADORA2A	135	protein
+Theophylline	DB00277	drug	PDE4A	5141	protein
+Theophylline	DB00277	drug	ADORA1	134	protein
+Theophylline	DB00277	drug	ADORA2B	136	protein
+Theophylline	DB00277	drug	CPNE1	8904	protein
+Theophylline	DB00277	drug	ADORA3	140	protein
+Theophylline	DB00277	drug	PDE4B	5142	protein
+Theophylline	DB00277	drug	PDE3B	5140	protein
+Theophylline	DB00277	drug	RIC3	79608	protein
+Theophylline	DB00277	drug	PDE3A	5139	protein
+Theophylline	DB00277	drug	TTLL3	26140	protein
+Theophylline	DB00277	drug	PDE4C	5143	protein
+Theophylline	DB00277	drug	PDE5A	8654	protein
+formoterol	DB00983	drug	ADRB1	153	protein
+formoterol	DB00983	drug	ADRB2	154	protein
+formoterol	DB00983	drug	ADRB3	155	protein
+PDE4D	5144	protein	PDE4B	5142	protein
+HDAC2	3066	protein	PARP1	142	protein
+ADRB2	154	protein	ADRB3	155	protein
+PARP1	142	protein	mitochondrion organization	GO:0007005	biological_function
+PARP1	142	protein	cellular response to DNA damage stimulus	GO:0006974	biological_function
+HDAC2	3066	protein	negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function
+HDAC2	3066	protein	negative regulation of transcription, DNA-templated	GO:0045892	biological_function
+PARP1	142	protein	double-strand break repair	GO:0006302	biological_function
+ADRB2	154	protein	desensitization of G-protein coupled receptor protein signaling pathway by arrestin	GO:0002032	biological_function
+HDAC2	3066	protein	positive regulation of cell proliferation	GO:0008284	biological_function
+ADORA3	140	protein	negative regulation of cell migration	GO:0030336	biological_function
+PDE3A	5139	protein	cAMP catabolic process	GO:0006198	biological_function
+PDE4A	5141	protein	cAMP catabolic process	GO:0006198	biological_function
+PDE4B	5142	protein	cAMP catabolic process	GO:0006198	biological_function
+PDE4D	5144	protein	cAMP catabolic process	GO:0006198	biological_function
+PARP1	142	protein	mitochondrial DNA metabolic process	GO:0032042	biological_function
+HDAC2	3066	protein	maintenance of chromatin silencing	GO:0006344	biological_function
+CPNE1	8904	protein	negative regulation of gene expression	GO:0010629	biological_function
+PARP1	142	protein	protein modification process	GO:0036211	biological_function
+PARP1	142	protein	protein ADP-ribosylation	GO:0006471	biological_function
+CPNE1	8904	protein	proteolysis	GO:0006508	biological_function
+HM13	81502	protein	membrane protein proteolysis	GO:0033619	biological_function
+ADRB2	154	protein	receptor-mediated endocytosis	GO:0006898	biological_function
+PARP1	142	protein	apoptotic process	GO:0006915	biological_function
+PDE3B	5140	protein	negative regulation of cell adhesion	GO:0007162	biological_function
+ADORA2A	135	protein	adenylate cyclase-activating G-protein coupled receptor signaling pathway	GO:0007189	biological_function
+PDE3A	5139	protein	cAMP-mediated signaling	GO:0019933	biological_function
+ADRB2	154	protein	activation of adenylate cyclase activity	GO:0007190	biological_function
+ADRB3	155	protein	activation of adenylate cyclase activity	GO:0007190	biological_function
+PARP1	142	protein	regulation of catalytic activity	GO:0050790	biological_function
+PARP1	142	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+HDAC2	3066	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+ADRB2	154	protein	positive regulation of protein serine/threonine kinase activity	GO:0071902	biological_function
+ADORA3	140	protein	negative regulation of cell proliferation	GO:0008285	biological_function
+PARP1	142	protein	cellular response to insulin stimulus	GO:0032869	biological_function
+ADRB2	154	protein	positive regulation of protein kinase A signaling	GO:0010739	biological_function
+PDE3A	5139	protein	cGMP-mediated signaling	GO:0019934	biological_function
+PARP1	142	protein	cellular response to UV	GO:0034644	biological_function
+HDAC2	3066	protein	positive regulation of receptor biosynthetic process	GO:0010870	biological_function
+PDE3B	5140	protein	negative regulation of lipid catabolic process	GO:0050995	biological_function
+HDAC2	3066	protein	positive regulation of proteolysis	GO:0045862	biological_function
+CPNE1	8904	protein	positive regulation of neuron differentiation	GO:0045666	biological_function
+PDE3B	5140	protein	negative regulation of angiogenesis	GO:0016525	biological_function
+HDAC2	3066	protein	histone deacetylation	GO:0016575	biological_function
+TTLL3	26140	protein	protein polyglycylation	GO:0018094	biological_function
+PARP1	142	protein	peptidyl-serine ADP-ribosylation	GO:0018312	biological_function
+ADRB1	153	protein	positive regulation of cAMP biosynthetic process	GO:0030819	biological_function
+ADRB2	154	protein	positive regulation of protein ubiquitination	GO:0031398	biological_function
+ADORA3	140	protein	negative regulation of NF-kappaB transcription factor activity	GO:0032088	biological_function
+HDAC2	3066	protein	negative regulation of DNA binding transcription factor activity	GO:0043433	biological_function
+PDE4B	5142	protein	positive regulation of interferon-gamma production	GO:0032729	biological_function
+PDE4D	5144	protein	positive regulation of interferon-gamma production	GO:0032729	biological_function
+PDE4B	5142	protein	positive regulation of interleukin-2 production	GO:0032743	biological_function
+PDE4D	5144	protein	positive regulation of interleukin-2 production	GO:0032743	biological_function
+PDE4D	5144	protein	positive regulation of interleukin-5 production	GO:0032754	biological_function
+ADRB2	154	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+ADRB3	155	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+PARP1	142	protein	regulation of cellular protein localization	GO:1903827	biological_function
+PARP1	142	protein	cellular response to oxidative stress	GO:0034599	biological_function
+CPNE1	8904	protein	regulation of I-kappaB kinase/NF-kappaB signaling	GO:0043122	biological_function
+HDAC2	3066	protein	ATP-dependent chromatin remodeling	GO:0043044	biological_function
+PDE3A	5139	protein	negative regulation of vascular permeability	GO:0043116	biological_function
+PDE3A	5139	protein	positive regulation of vascular permeability	GO:0043117	biological_function
+CPNE1	8904	protein	negative regulation of DNA binding	GO:0043392	biological_function
+PARP1	142	protein	mitochondrial DNA repair	GO:0043504	biological_function
+ADRB1	153	protein	positive regulation of GTPase activity	GO:0043547	biological_function
+ADRB1	153	protein	positive regulation of cAMP-mediated signaling	GO:0043950	biological_function
+PDE5A	8654	protein	cGMP catabolic process	GO:0046069	biological_function
+CPNE1	8904	protein	neuron projection extension	GO:1990138	biological_function
+PDE4B	5142	protein	T cell receptor signaling pathway	GO:0050852	biological_function
+PDE4D	5144	protein	T cell receptor signaling pathway	GO:0050852	biological_function
+CPNE1	8904	protein	positive regulation of protein kinase B signaling	GO:0051897	biological_function
+PARP1	142	protein	protein poly-ADP-ribosylation	GO:0070212	biological_function
+CPNE1	8904	protein	cellular response to calcium ion	GO:0071277	biological_function
+PDE3A	5139	protein	cellular response to cGMP	GO:0071321	biological_function
+ADRB2	154	protein	adrenergic receptor signaling pathway	GO:0071875	biological_function
+ADRB1	153	protein	adenylate cyclase-activating adrenergic receptor signaling pathway	GO:0071880	biological_function
+ADRB2	154	protein	positive regulation of autophagosome maturation	GO:1901098	biological_function
+CPNE1	8904	protein	negative regulation of NIK/NF-kappaB signaling	GO:1901223	biological_function
+CPNE1	8904	protein	positive regulation of tumor necrosis factor-mediated signaling pathway	GO:1903265	biological_function
+PARP1	142	protein	positive regulation of single strand break repair	GO:1903518	biological_function
+HM13	81502	protein	membrane protein proteolysis involved in retrograde protein transport, ER to cytosol	GO:1904211	biological_function
+ADRB2	154	protein	positive regulation of lipophagy	GO:1904504	biological_function
+ADRB2	154	protein	cellular response to amyloid-beta	GO:1904646	biological_function
+PARP1	142	protein	ATP generation from poly-ADP-D-ribose	GO:1990966	biological_function
+ADRB2	154	protein	positive regulation of AMPA receptor activity	GO:2000969	biological_function
+PARP1	142	protein	negative regulation of ATP biosynthetic process	GO:2001170	biological_function
+negative regulation of transcription by RNA polymerase II	GO:0000122	biological_function	negative regulation of transcription, DNA-templated	GO:0045892	biological_function
+negative regulation of transcription, DNA-templated	GO:0045892	biological_function	negative regulation of gene expression	GO:0010629	biological_function
+membrane protein proteolysis	GO:0033619	biological_function	proteolysis	GO:0006508	biological_function
+adenylate cyclase-activating G-protein coupled receptor signaling pathway	GO:0007189	biological_function	cAMP-mediated signaling	GO:0019933	biological_function
+activation of adenylate cyclase activity	GO:0007190	biological_function	regulation of catalytic activity	GO:0050790	biological_function
+positive regulation of proteolysis	GO:0045862	biological_function	proteolysis	GO:0006508	biological_function
+peptidyl-serine ADP-ribosylation	GO:0018312	biological_function	protein ADP-ribosylation	GO:0006471	biological_function
+negative regulation of NF-kappaB transcription factor activity	GO:0032088	biological_function	negative regulation of DNA binding transcription factor activity	GO:0043433	biological_function
+mitochondrial DNA repair	GO:0043504	biological_function	mitochondrial DNA metabolic process	GO:0032042	biological_function
+positive regulation of cAMP-mediated signaling	GO:0043950	biological_function	cAMP-mediated signaling	GO:0019933	biological_function
+protein poly-ADP-ribosylation	GO:0070212	biological_function	protein ADP-ribosylation	GO:0006471	biological_function
+adenylate cyclase-activating adrenergic receptor signaling pathway	GO:0071880	biological_function	adrenergic receptor signaling pathway	GO:0071875	biological_function
+adenylate cyclase-activating adrenergic receptor signaling pathway	GO:0071880	biological_function	adenylate cyclase-activating G-protein coupled receptor signaling pathway	GO:0007189	biological_function
+membrane protein proteolysis involved in retrograde protein transport, ER to cytosol	GO:1904211	biological_function	membrane protein proteolysis	GO:0033619	biological_function

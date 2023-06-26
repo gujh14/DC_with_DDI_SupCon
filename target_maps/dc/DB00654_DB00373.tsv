@@ -1,0 +1,24 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+latanoprost	DB00654	drug	PTGFR	5737	protein
+timolol	DB00373	drug	ADRB1	153	protein
+timolol	DB00373	drug	ADRB2	154	protein
+ADRB2	154	protein	desensitization of G-protein coupled receptor protein signaling pathway by arrestin	GO:0002032	biological_function
+PTGFR	5737	protein	positive regulation of cell proliferation	GO:0008284	biological_function
+ADRB2	154	protein	receptor-mediated endocytosis	GO:0006898	biological_function
+ADRB2	154	protein	activation of adenylate cyclase activity	GO:0007190	biological_function
+ADRB2	154	protein	positive regulation of protein serine/threonine kinase activity	GO:0071902	biological_function
+ADRB2	154	protein	positive regulation of protein kinase A signaling	GO:0010739	biological_function
+ADRB1	153	protein	positive regulation of cAMP biosynthetic process	GO:0030819	biological_function
+ADRB2	154	protein	positive regulation of protein ubiquitination	GO:0031398	biological_function
+ADRB2	154	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+PTGFR	5737	protein	calcium-mediated signaling using intracellular calcium source	GO:0035584	biological_function
+ADRB1	153	protein	positive regulation of GTPase activity	GO:0043547	biological_function
+ADRB1	153	protein	positive regulation of cAMP-mediated signaling	GO:0043950	biological_function
+PTGFR	5737	protein	cellular response to prostaglandin D stimulus	GO:0071799	biological_function
+ADRB2	154	protein	adrenergic receptor signaling pathway	GO:0071875	biological_function
+ADRB1	153	protein	adenylate cyclase-activating adrenergic receptor signaling pathway	GO:0071880	biological_function
+ADRB2	154	protein	positive regulation of autophagosome maturation	GO:1901098	biological_function
+ADRB2	154	protein	positive regulation of lipophagy	GO:1904504	biological_function
+ADRB2	154	protein	cellular response to amyloid-beta	GO:1904646	biological_function
+ADRB2	154	protein	positive regulation of AMPA receptor activity	GO:2000969	biological_function
+adenylate cyclase-activating adrenergic receptor signaling pathway	GO:0071880	biological_function	adrenergic receptor signaling pathway	GO:0071875	biological_function

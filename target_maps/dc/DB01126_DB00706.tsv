@@ -1,0 +1,14 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+dutasteride	DB01126	drug	SRD5A1	6715	protein
+dutasteride	DB01126	drug	SRD5A2	6716	protein
+tamsulosin	DB00706	drug	ADRA1B	147	protein
+tamsulosin	DB00706	drug	ADRA1D	146	protein
+tamsulosin	DB00706	drug	ADRA1A	148	protein
+ADRA1B	147	protein	ADRA1D	146	protein
+ADRA1B	147	protein	ADRA1A	148	protein
+ADRA1D	146	protein	ADRA1A	148	protein
+SRD5A2	6716	protein	androgen metabolic process	GO:0008209	biological_function
+SRD5A2	6716	protein	male gonad development	GO:0008584	biological_function
+ADRA1B	147	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+ADRA1A	148	protein	positive regulation of MAPK cascade	GO:0043410	biological_function
+SRD5A2	6716	protein	testosterone biosynthetic process	GO:0061370	biological_function

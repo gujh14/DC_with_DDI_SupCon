@@ -1,0 +1,100 @@
+node_1	node_1_id	node_1_type	node_2	node_2_id	node_2_type
+phenytoin	DB00252	drug	SCN1B	6324	protein
+phenytoin	DB00252	drug	NR1I2	8856	protein
+phenytoin	DB00252	drug	SCN3A	6328	protein
+phenytoin	DB00252	drug	SCN1A	6323	protein
+phenytoin	DB00252	drug	SCN5A	6331	protein
+phenytoin	DB00252	drug	SCN4A	6329	protein
+phenytoin	DB00252	drug	SCN8A	6334	protein
+phenytoin	DB00252	drug	SCN10A	6336	protein
+phenytoin	DB00252	drug	SCN2A	6326	protein
+ondansetron	DB00904	drug	HTR1B	3351	protein
+ondansetron	DB00904	drug	OPRM1	4988	protein
+ondansetron	DB00904	drug	HTR1A	3350	protein
+ondansetron	DB00904	drug	HTR3A	3359	protein
+ondansetron	DB00904	drug	HTR4	3360	protein
+HTR1B	3351	protein	HTR1A	3350	protein
+NR1I2	8856	protein	negative regulation of transcription, DNA-templated	GO:0045892	biological_function
+SCN5A	6331	protein	regulation of heart rate	GO:0002027	biological_function
+SCN10A	6336	protein	regulation of heart rate	GO:0002027	biological_function
+SCN5A	6331	protein	sodium ion transport	GO:0006814	biological_function
+SCN1B	6324	protein	membrane depolarization	GO:0051899	biological_function
+SCN5A	6331	protein	membrane depolarization	GO:0051899	biological_function
+HTR1A	3350	protein	G-protein coupled receptor signaling pathway	GO:0007186	biological_function
+NR1I2	8856	protein	xenobiotic metabolic process	GO:0006805	biological_function
+NR1I2	8856	protein	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+HTR1B	3351	protein	adenylate cyclase-inhibiting G-protein coupled receptor signaling pathway	GO:0007193	biological_function
+HTR1A	3350	protein	adenylate cyclase-inhibiting serotonin receptor signaling pathway	GO:0007198	biological_function
+HTR1B	3351	protein	adenylate cyclase-inhibiting serotonin receptor signaling pathway	GO:0007198	biological_function
+NR1I2	8856	protein	positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function
+SCN1B	6324	protein	positive regulation of sodium ion transport	GO:0010765	biological_function
+SCN5A	6331	protein	positive regulation of sodium ion transport	GO:0010765	biological_function
+SCN10A	6336	protein	regulation of cardiac muscle contraction	GO:0055117	biological_function
+SCN10A	6336	protein	regulation of ion transmembrane transport	GO:0034765	biological_function
+SCN1B	6324	protein	regulation of sodium ion transmembrane transporter activity	GO:2000649	biological_function
+HTR1B	3351	protein	cellular response to drug	GO:0035690	biological_function
+SCN1B	6324	protein	sodium ion transmembrane transport	GO:0035725	biological_function
+SCN5A	6331	protein	sodium ion transmembrane transport	GO:0035725	biological_function
+SCN10A	6336	protein	sodium ion transmembrane transport	GO:0035725	biological_function
+NR1I2	8856	protein	exogenous drug catabolic process	GO:0042738	biological_function
+NR1I2	8856	protein	xenobiotic transport	GO:0042908	biological_function
+NR1I2	8856	protein	drug export	GO:0046618	biological_function
+OPRM1	4988	protein	behavioral response to ethanol	GO:0048149	biological_function
+SCN1B	6324	protein	cardiac muscle contraction	GO:0060048	biological_function
+SCN5A	6331	protein	cardiac muscle contraction	GO:0060048	biological_function
+SCN5A	6331	protein	regulation of ventricular cardiac muscle cell membrane repolarization	GO:0060307	biological_function
+SCN1B	6324	protein	regulation of atrial cardiac muscle cell membrane depolarization	GO:0060371	biological_function
+SCN5A	6331	protein	regulation of atrial cardiac muscle cell membrane depolarization	GO:0060371	biological_function
+SCN10A	6336	protein	regulation of atrial cardiac muscle cell membrane depolarization	GO:0060371	biological_function
+SCN5A	6331	protein	regulation of atrial cardiac muscle cell membrane repolarization	GO:0060372	biological_function
+SCN5A	6331	protein	regulation of ventricular cardiac muscle cell membrane depolarization	GO:0060373	biological_function
+OPRM1	4988	protein	regulation of cellular response to stress	GO:0080135	biological_function
+OPRM1	4988	protein	negative regulation of Wnt protein secretion	GO:0061358	biological_function
+SCN5A	6331	protein	cellular response to calcium ion	GO:0071277	biological_function
+HTR1B	3351	protein	cellular response to alkaloid	GO:0071312	biological_function
+SCN1A	6323	protein	cardiac muscle cell action potential involved in contraction	GO:0086002	biological_function
+SCN1B	6324	protein	cardiac muscle cell action potential involved in contraction	GO:0086002	biological_function
+SCN5A	6331	protein	cardiac muscle cell action potential involved in contraction	GO:0086002	biological_function
+SCN5A	6331	protein	regulation of cardiac muscle cell contraction	GO:0086004	biological_function
+SCN5A	6331	protein	ventricular cardiac muscle cell action potential	GO:0086005	biological_function
+SCN5A	6331	protein	membrane depolarization during action potential	GO:0086010	biological_function
+SCN5A	6331	protein	membrane depolarization during cardiac muscle cell action potential	GO:0086012	biological_function
+SCN5A	6331	protein	atrial cardiac muscle cell action potential	GO:0086014	biological_function
+SCN5A	6331	protein	SA node cell action potential	GO:0086015	biological_function
+SCN5A	6331	protein	AV node cell action potential	GO:0086016	biological_function
+SCN10A	6336	protein	AV node cell action potential	GO:0086016	biological_function
+SCN5A	6331	protein	bundle of His cell action potential	GO:0086043	biological_function
+SCN10A	6336	protein	bundle of His cell action potential	GO:0086043	biological_function
+SCN5A	6331	protein	membrane depolarization during AV node cell action potential	GO:0086045	biological_function
+SCN5A	6331	protein	membrane depolarization during SA node cell action potential	GO:0086046	biological_function
+SCN1B	6324	protein	membrane depolarization during Purkinje myocyte cell action potential	GO:0086047	biological_function
+SCN5A	6331	protein	membrane depolarization during Purkinje myocyte cell action potential	GO:0086047	biological_function
+SCN5A	6331	protein	membrane depolarization during bundle of His cell action potential	GO:0086048	biological_function
+SCN5A	6331	protein	AV node cell to bundle of His cell communication	GO:0086067	biological_function
+SCN1B	6324	protein	regulation of heart rate by cardiac conduction	GO:0086091	biological_function
+SCN5A	6331	protein	regulation of heart rate by cardiac conduction	GO:0086091	biological_function
+SCN5A	6331	protein	membrane depolarization during atrial cardiac muscle cell action potential	GO:0098912	biological_function
+SCN5A	6331	protein	regulation of sodium ion transmembrane transport	GO:1902305	biological_function
+HTR1B	3351	protein	positive regulation of vascular smooth muscle cell proliferation	GO:1904707	biological_function
+adenylate cyclase-inhibiting serotonin receptor signaling pathway	GO:0007198	biological_function	adenylate cyclase-inhibiting G-protein coupled receptor signaling pathway	GO:0007193	biological_function
+positive regulation of transcription by RNA polymerase II	GO:0045944	biological_function	positive regulation of transcription, DNA-templated	GO:0045893	biological_function
+positive regulation of sodium ion transport	GO:0010765	biological_function	sodium ion transport	GO:0006814	biological_function
+regulation of cardiac muscle contraction	GO:0055117	biological_function	cardiac muscle contraction	GO:0060048	biological_function
+regulation of sodium ion transmembrane transporter activity	GO:2000649	biological_function	regulation of sodium ion transmembrane transport	GO:1902305	biological_function
+sodium ion transmembrane transport	GO:0035725	biological_function	sodium ion transport	GO:0006814	biological_function
+regulation of cardiac muscle cell contraction	GO:0086004	biological_function	regulation of cardiac muscle contraction	GO:0055117	biological_function
+ventricular cardiac muscle cell action potential	GO:0086005	biological_function	cardiac muscle cell action potential involved in contraction	GO:0086002	biological_function
+membrane depolarization during action potential	GO:0086010	biological_function	membrane depolarization	GO:0051899	biological_function
+membrane depolarization during cardiac muscle cell action potential	GO:0086012	biological_function	membrane depolarization during action potential	GO:0086010	biological_function
+atrial cardiac muscle cell action potential	GO:0086014	biological_function	cardiac muscle cell action potential involved in contraction	GO:0086002	biological_function
+membrane depolarization during AV node cell action potential	GO:0086045	biological_function	AV node cell action potential	GO:0086016	biological_function
+membrane depolarization during AV node cell action potential	GO:0086045	biological_function	membrane depolarization during cardiac muscle cell action potential	GO:0086012	biological_function
+membrane depolarization during SA node cell action potential	GO:0086046	biological_function	SA node cell action potential	GO:0086015	biological_function
+membrane depolarization during SA node cell action potential	GO:0086046	biological_function	membrane depolarization during cardiac muscle cell action potential	GO:0086012	biological_function
+membrane depolarization during Purkinje myocyte cell action potential	GO:0086047	biological_function	membrane depolarization during cardiac muscle cell action potential	GO:0086012	biological_function
+membrane depolarization during bundle of His cell action potential	GO:0086048	biological_function	bundle of His cell action potential	GO:0086043	biological_function
+membrane depolarization during bundle of His cell action potential	GO:0086048	biological_function	membrane depolarization during cardiac muscle cell action potential	GO:0086012	biological_function
+regulation of heart rate by cardiac conduction	GO:0086091	biological_function	regulation of heart rate	GO:0002027	biological_function
+membrane depolarization during atrial cardiac muscle cell action potential	GO:0098912	biological_function	atrial cardiac muscle cell action potential	GO:0086014	biological_function
+membrane depolarization during atrial cardiac muscle cell action potential	GO:0098912	biological_function	membrane depolarization during cardiac muscle cell action potential	GO:0086012	biological_function
+regulation of sodium ion transmembrane transport	GO:1902305	biological_function	sodium ion transmembrane transport	GO:0035725	biological_function
