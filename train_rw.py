@@ -31,8 +31,8 @@ def parse_args():
     # parser.add_argument('--ckpt_name', type=str, default='default_DREAMwalk_prod_fc', help='checkpoint name')
     parser.add_argument('--train_mode', type=str, default='contra', choices=['contra', 'nocontra'])
     parser.add_argument('--wandb', action=argparse.BooleanOptionalAction, default=False, help='use wandb or not')
-    parser.add_argument('--entity', type=str, default='gujh14', help='your wandb entity name')
-    parser.add_argument('--project', type=str, default='DC_DDI_SCL - chemical features 10 seeds', help='your wandb project name')
+    parser.add_argument('--entity', type=str, help='your wandb entity name')
+    parser.add_argument('--project', type=str, help='your wandb project name')
     args = parser.parse_args()
     return args
 
